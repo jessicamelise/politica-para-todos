@@ -1,11 +1,24 @@
-import Button from '@mui/material/Button';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
+import Home from './pages/Home';
+import PoliticalDetails from './pages/PoliticalDetails';
 
-function App() {
+const App = () => {
+  const router = createHashRouter(
+    [
+      {
+        element: <Home />,
+        path: '/',
+      },
+      {
+        element: <PoliticalDetails />,
+        path: '/:political',
+      },
+    ], 
+    { basename: "/" }
+  );
+
   return (
-    <div>
-      teste
-      <Button>button mui</Button>
-    </div>
+    <RouterProvider router={router} />
   );
 }
 
