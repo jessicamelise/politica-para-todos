@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/politica-para-todos/static/css/main.e6c13ad2.css",
-    "main.js": "/politica-para-todos/static/js/main.9f9ca99c.js",
+    "main.js": "/politica-para-todos/static/js/main.e1eed7de.js",
     "index.html": "/politica-para-todos/index.html",
     "main.e6c13ad2.css.map": "/politica-para-todos/static/css/main.e6c13ad2.css.map",
-    "main.9f9ca99c.js.map": "/politica-para-todos/static/js/main.9f9ca99c.js.map"
+    "main.e1eed7de.js.map": "/politica-para-todos/static/js/main.e1eed7de.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.9f9ca99c.js"
+    "static/js/main.e1eed7de.js"
   ]
 }
