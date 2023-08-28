@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       teste
-      <Button>teste mui</Button>
+      <Button>button mui</Button>
     </div>
   );
 }
