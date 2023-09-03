@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import { getPoliticalList } from "../api/openDataPolitical";
 import Header from "../components/Header";
@@ -7,6 +8,7 @@ import LoadingData from "../components/LoadingData";
 import CardPolitical from "../components/CardPolitical";
 
 const Home = () => {
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [search, setSearch] = useState('');
@@ -22,6 +24,11 @@ const Home = () => {
       };
       getPoliticalList(params);
     };
+  };
+
+  const routeChangeToDetails = (id) => {
+    const path = `/${id}`; 
+    navigate(path);
   };
 
   return (
@@ -50,6 +57,7 @@ const Home = () => {
               <CardPolitical
                 key={political.id} 
                 political={political}
+                routeChangeToDetails={routeChangeToDetails}
               />
             )
           })}
