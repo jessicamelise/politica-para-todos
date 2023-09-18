@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+<h1 align="center">Politica para Todos</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Acesse em: Em breve...
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+* [1. Projeto](#1-projeto)
+* [2. Montagem do ambiente de desenvolvimento](#2-montagem-do-ambiente-de-desenvolvimento)
+* [3. Implementações Futuras e Melhorias](#3-implementações-futuras-e-melhorias)
 
-### `npm start`
+## 1. Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto consistem em:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fazer parte do projeto de conclusão do MBA da XPE Edução em front end :heavy_check_mark:
+- Propor que assuntos relacionados a politica (pesquisa, escolha) seja liberado para todos os usuários interessados de forma rápida, direto da fonte, sem interfarencias de possíveis fake news :heavy_check_mark:
+- Página de Consulta: Página simples para pesquisar com o nome do politico que quiser, trará uma lista de politicos relacionado com o nome pesquisado :heavy_check_mark:
+- Página de Detalhes: Página simples para ver informações do politico que quiser, trará diversos assuntos relacionado ao politico como, eventos, discursos, despesas e etc :heavy_check_mark:
+- Readme (documentação) :heavy_check_mark:
 
-### `npm test`
+## 3. Implementações Futuras e Melhorias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Ter uma área para salvar / deixar favoritado deputados que tenho interesse
+* Criar uma conta e logar na aplicação e conseguir acessar meus favoritos
+* Colocar máscara de Data e Hora nas exibições
+* Resolver problema de CORS e disponibilizar o app para outras pessoas 
+* Melhorar a cobertura de testes;
 
-### `npm run build`
+## 2. Montagem do ambiente de desenvolvimento
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> :warning: Será necessária a utilização:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Projeto desenvolvido com React.Js + JavaScript + Material UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* [Node.js](https://nodejs.org/) que contém o [npm](https://docs.npmjs.com/) para instalação das dependências.
 
-### `npm run eject`
+* Faça o clone do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+``` sh
+git https://github.com/jessicamelise/politica-para-todos.git
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Instale as dependências do projeto com o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+``` sh
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* secrets Config no repositório
+  :warning: Caso tenha interesse em manter e evoluir seu projeto clonado, o mesmo tem um workflow configurado no gitlab actions que faz o deploy automático no gh pages e para ele funcionar será necessario setar as secrets abaixo no seu repositório:
 
-## Learn More
+``` js
+ACTIONS_DEPLOY_ACCESS_TOKEN={token gerado no personal tokens aqui no github}
+USER_EMAIL={email}
+USER_NAME={name}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Localhost:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+``` sh
+npm start
+```
 
-### Code Splitting
+* Testes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm run test
+```
 
-### Analyzing the Bundle Size
+```sh
+npm run test -- --coverage .
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* Deploy e Build
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Está automático pelo workflow do github actions
+[https://github.com/jessicamelise/politica-para-todos/actions](https://github.com/jessicamelise/politica-para-todos/actions)
