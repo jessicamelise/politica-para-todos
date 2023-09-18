@@ -18,14 +18,6 @@ O projeto consistem em:
 - Página de Detalhes: Página simples para ver informações do politico que quiser, trará diversos assuntos relacionado ao politico como, eventos, discursos, despesas e etc :heavy_check_mark:
 - Readme (documentação) :heavy_check_mark:
 
-## 3. Implementações Futuras e Melhorias
-
-* Ter uma área para salvar / deixar favoritado deputados que tenho interesse
-* Criar uma conta e logar na aplicação e conseguir acessar meus favoritos
-* Colocar máscara de Data e Hora nas exibições
-* Resolver problema de CORS e disponibilizar o app para outras pessoas 
-* Melhorar a cobertura de testes;
-
 ## 2. Montagem do ambiente de desenvolvimento
 
 > :warning: Será necessária a utilização:
@@ -75,3 +67,11 @@ npm run test -- --coverage .
 
 Está automático pelo workflow do github actions
 [https://github.com/jessicamelise/politica-para-todos/actions](https://github.com/jessicamelise/politica-para-todos/actions)
+
+## 3. Implementações Futuras e Melhorias
+
+* Ter uma área para salvar / deixar favoritado deputados que tenho interesse
+* Criar uma conta e logar na aplicação e conseguir acessar meus favoritos
+* Colocar máscara de Data e Hora nas exibições
+* Resolver problema de CORS e disponibilizar o app para outras pessoas 
+* Melhorar a cobertura de testes;
